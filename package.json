@@ -1,0 +1,56 @@
+{
+  "name": "blog-error-log",
+  "version": "1.0.0",
+  "description": "Blog on development area",
+  "keywords": [
+    "Blog",
+    "Javascript",
+    "CSS",
+    "HTML",
+    "SASS",
+    "Reat",
+    "Next.js",
+    "AStro"
+  ],
+  "homepage": "https://github.com/vieriusorin/blog-error-log#readme",
+  "bugs": {
+    "url": "https://github.com/vieriusorin/blog-error-log/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vieriusorin/blog-error-log.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@astrojs/mdx": "^4.2.5",
+    "@astrojs/rss": "^4.0.11",
+    "@astrojs/sitemap": "^3.3.1",
+    "@astrojs/ts-plugin": "^1.10.4",
+    "@fontsource/poppins": "^5.2.5",
+    "@rollup/rollup-win32-x64-msvc": "^4.40.1",
+    "astro": "^5.7.9",
+    "dotenv": "^16.5.0",
+    "lightningcss": "^1.29.3",
+    "tailwindcss-animated": "^2.0.0"
+  },
+  "engines": {
+    "node": ">=18.17.1",
+    "npm": ">=10.9.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.1.4",
+    "@types/node": "^22.15.2",
+    "tailwindcss": "^4.1.4",
+    "typescript": "^5.8.3"
+  }
+}
