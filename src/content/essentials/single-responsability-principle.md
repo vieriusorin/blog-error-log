@@ -1,24 +1,13 @@
 ---
 title: "Single Responsibility Principle"
-summary: "Design components and modules to have just one reason to change"
+description: "Design components and modules to have just one reason to change"
 category: "architecture"
 tags: ["SOLID", "design principles", "maintainability", "refactoring"]
 complexity: "medium"
-impact: "high"
-createdDate: "2024-02-15"
-contributors: [
-  { name: "Jane Smith", github: "janesmith" }
-]
-references: [
-  { title: "Clean Code", type: "book" },
-  { title: "SOLID Principles in JavaScript", url: "https://medium.com/better-programming/solid-principles-in-javascript-1c6f370d948a", type: "article" }
-]
-applicableTo: ["javascript", "typescript", "react", "any"]
-keywords: ["SRP", "responsibility", "cohesion", "separation of concerns"]
-relatedEssentials: ["separation-of-concerns", "interface-segregation-principle"]
+pubDate: "2024-01-01"
+author:
+  name: "John Doe"
 ---
-
-# Single Responsibility Principle
 
 ## Definition
 

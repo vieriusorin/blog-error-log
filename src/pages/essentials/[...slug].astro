@@ -1,21 +1,21 @@
 ---
-import { type CollectionEntry, getCollection } from 'astro:content';
-import { render } from 'astro:content';
-import EssentialPost from '../../layouts/EssentialPost.astro';
+import { type CollectionEntry, getCollection } from "astro:content";
+import { render } from "astro:content";
+import RootLayout from "../../shared/layouts/RootLayout.astro";
 
 export async function getStaticPaths() {
-	const posts = await getCollection('essentials');
+	const posts = await getCollection("essentials");
 	return posts.map((post) => ({
 		params: { slug: post.id },
 		props: post,
 	}));
 }
-type Props = CollectionEntry<'essentials'>;
+type Props = CollectionEntry<"essentials">;
 
 const post = Astro.props;
 const { Content } = await render(post);
 ---
 
-<EssentialPost {...post.data}>
+<RootLayout title={post.data.title} description={post.data.description}>
 	<Content />
-</EssentialPost>
+</RootLayout>

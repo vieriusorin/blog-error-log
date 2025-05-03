@@ -1,0 +1,298 @@
+@layer reset {
+
+	*,
+	*::before,
+	*::after {
+		box-sizing: border-box;
+	}
+
+	/* https://kilianvalkhof.com/2022/css-html/your-css-reset-needs-text-size-adjust-probably/ */
+	html {
+		-moz-text-size-adjust: none;
+		-webkit-text-size-adjust: none;
+		text-size-adjust: none;
+	}
+
+	body,
+	h1,
+	h2,
+	h3,
+	h4,
+	p,
+	figure,
+	blockquote,
+	dl,
+	dd {
+		margin: 0;
+	}
+
+	/* https://www.scottohara.me/blog/2019/01/12/lists-and-safari.html */
+	[role="list"] {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	body {
+		min-block-size: 100vh;
+		line-height: 1.6;
+	}
+
+	h1,
+	h2,
+	h3,
+	button,
+	input,
+	label {
+		line-height: 1.1;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4 {
+		text-wrap: balance;
+	}
+
+	p,
+	li {
+		text-wrap: pretty;
+	}
+
+	img,
+	picture {
+		max-inline-size: 100%;
+		display: block;
+	}
+
+	input,
+	button,
+	textarea,
+	select {
+		font: inherit;
+	}
+}
+
+:root {
+	/* ========== PRIMITIVE TOKENS ========== */
+	/* Colors: Base palette */
+	--color-white: hsl(0, 0%, 100%);
+	--color-gray-100: hsl(0, 2%, 79%);
+
+	/* Colors: Brand */
+	--color-brand-400: hsl(25, 88%, 75%);
+	--color-brand-500: hsl(25, 88%, 66%);
+
+	/* Colors: Functional */
+	--color-green-400: hsl(143, 19%, 49%);
+	--color-green-500: hsl(143, 38%, 37%);
+	--color-green-600: hsl(145, 29%, 19%);
+
+	/* Colors: Neutrals */
+	--color-brown-500: hsl(10, 5%, 25%);
+	--color-brown-600: hsl(9, 7%, 21%);
+	--color-brown-700: hsl(9, 8%, 16%);
+	--color-brown-800: hsl(0, 6%, 15%);
+	--color-brown-900: hsl(0, 6%, 13%);
+
+	--color-gray-100: hsl(60, 10%, 96%);
+	--color-gray-200: hsl(60, 5%, 90%);
+	--color-gray-300: hsl(60, 5%, 85%);
+	--color-gray-400: hsl(60, 5%, 80%);
+	--color-gray-500: hsl(60, 5%, 70%);
+	--color-gray-600: hsl(60, 2%, 40%);
+	--color-gray-700: hsl(60, 2%, 30%);
+	--color-gray-800: hsl(60, 2%, 25%);
+	--color-gray-900: hsl(60, 2%, 20%);
+
+	/* Colors: Supporting */
+	--color-orange-500: hsl(41, 43%, 28%);
+	--color-red-500: hsl(359, 34%, 24%);
+	--color-teal-500: hsl(186, 42%, 25%);
+
+	/* Typography: Font Families */
+	--font-family-heading: "Outfit", sans-serif;
+	--font-family-body: "Fira Sans", sans-serif;
+
+	/* Typography: Font Sizes */
+	--font-size-300: 0.875rem;
+	--font-size-400: 1rem;
+	--font-size-500: 1.125rem;
+	--font-size-600: 1.25rem;
+	--font-size-700: 1.5rem;
+	--font-size-800: 2rem;
+	--font-size-900: 3.75rem;
+	--font-size-1000: 3.75rem;
+
+	/* Spacing & Layout */
+	--spacing-1: 0.25rem;
+	--spacing-2: 0.5rem;
+	--spacing-3: 0.75rem;
+	--spacing-4: 1rem;
+
+	/* Border Radius */
+	--radius-small: 0.25rem;
+	--radius-medium: 0.5rem;
+	--radius-large: 0.75rem;
+
+	@media (width > 760px) {
+		--font-size-300: 0.875rem;
+		--font-size-400: 1rem;
+		--font-size-500: 1.25rem;
+		--font-size-600: 1.5rem;
+		--font-size-700: 2rem;
+		--font-size-800: 3rem;
+		--font-size-900: 5rem;
+		--font-size-1000: 7.5rem;
+	}
+}
+
+/* ========== SEMANTIC TOKENS ========== */
+:root {
+	/* Text Colors */
+	--text-primary: var(--color-gray-100);
+	--text-high-contrast: var(--color-white);
+	--text-brand: var(--color-brand-500);
+	--text-brand-light: var(--color-brand-400);
+
+	/* Background Colors */
+	--background-accent-light: var(--color-green-400);
+	--background-accent: var(--color-green-500);
+	--background-accent-dark: var(--color-green-600);
+
+	--background-surface-lightest: var(--color-brown-500);
+	--background-surface-light: var(--color-brown-600);
+	--background-surface: var(--color-brown-700);
+	--background-surface-dark: var(--color-brown-800);
+	--background-surface-darkest: var(--color-brown-900);
+
+	/* Typography: Semantic Sizes */
+	--heading-small: var(--font-size-700);
+	--heading-medium: var(--font-size-800);
+	--heading-large: var(--font-size-900);
+	--heading-xlarge: var(--font-size-1000);
+
+	--text-small: var(--font-size-300);
+	--text-base: var(--font-size-400);
+	--text-medium: var(--font-size-500);
+	--text-large: var(--font-size-600);
+
+	/* Layout */
+	--border-radius-small: var(--radius-small);
+	--border-radius-default: var(--radius-medium);
+	--border-radius-large: var(--radius-large);
+}
+
+@layer base {
+	body {
+		font-family: var(--font-family-body);
+		font-size: var(--font-size-400);
+		color: var(--text-base);
+		background-color: var(--color-gray-100);
+	}
+
+	h1,
+	h2,
+	h3,
+	h4 {
+		font-family: var(--font-family-heading);
+		font-weight: 700;
+		color: var(--text-base);
+	}
+
+	a {
+		color: var(--text-high-contrast);
+	}
+
+	a:hover,
+	a:focus-visible {
+		color: var(--text-brand-light);
+	}
+
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+}
+
+@layer layout {
+	.flow>*+* {
+		margin-block-start: var(--flow-space, 1em);
+	}
+
+	.grid-flow {
+		display: grid;
+		gap: var(--grid-flow-space, 1rem);
+
+		align-content: start;
+		justify-items: start;
+	}
+
+	.wrapper {
+		--wrapper-max-width: 1130px;
+		--wrapper-padding: 1rem;
+
+		max-width: var(--wrapper-max-width);
+		margin-inline: auto;
+		padding-inline: var(--wrapper-padding);
+
+		/* helps to match the Figma file */
+		box-sizing: content-box;
+	}
+
+	.wrapper[data-width="narrow"] {
+		--wrapper-max-width: 720px;
+	}
+
+	.wrapper[data-width="wide"] {
+		--wrapper-max-width: 1330px;
+	}
+
+	.section {
+		padding-block: 3.75rem;
+
+		@media (min-width: 760px) {
+			padding-block: 8rem;
+
+			&[data-padding="compact"] {
+				padding-block: 4.5rem;
+			}
+		}
+	}
+
+	.equal-columns {
+		display: grid;
+		gap: var(--equal-columns-gap, 1rem);
+		align-items: var(--column-layout-alignment, start);
+
+		&[data-gap="large"] {
+			gap: 2rem;
+		}
+
+		&[data-vertical-alignment="centered"] {
+			--column-layout-alignment: center;
+		}
+
+		&[data-vertical-alignment="bottom"] {
+			--column-layout-alignment: end;
+		}
+
+		@media (width > 760px) {
+			grid-auto-flow: column;
+			grid-auto-columns: 1fr;
+		}
+	}
+}
+
+@layer utilities {
+	.visually-hidden {
+		clip: rect(0 0 0 0);
+		clip-path: inset(50%);
+		height: 1px;
+		overflow: hidden;
+		position: absolute;
+		white-space: nowrap;
+		width: 1px;
+	}
+}

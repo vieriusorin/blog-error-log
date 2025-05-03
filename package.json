@@ -37,7 +37,6 @@
     "@astrojs/sitemap": "^3.3.1",
     "@astrojs/ts-plugin": "^1.10.4",
     "@fontsource/poppins": "^5.2.5",
-    "@rollup/rollup-win32-x64-msvc": "^4.40.1",
     "astro": "^5.7.9",
     "dotenv": "^16.5.0",
     "lightningcss": "^1.29.3",
