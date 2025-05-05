@@ -1,0 +1,237 @@
+{
+  "color": {
+    "primary": {
+      "light": "lch(60% 100 289)",
+      "base": "lch(39% 118 289)",
+      "dark": "lch(25% 90 289)",
+      "hover": "lch(35% 110 289)",
+      "focus": "lch(50% 125 289)"
+    },
+    "secondary": {
+      "light": "lch(90% 12 250)",
+      "base": "lch(83% 18 250)",
+      "dark": "lch(75% 15 250)",
+      "hover": "lch(80% 16 250)",
+      "focus": "lch(88% 20 250)"
+    },
+    "tertiary": {
+      "light": "lch(80% 15 15)",
+      "base": "lch(70% 22 15)",
+      "dark": "lch(60% 18 15)",
+      "hover": "lch(65% 20 15)",
+      "focus": "lch(75% 25 15)"
+    },
+    "accent": {
+      "light": "lch(80% 30 190)",
+      "base": "lch(72% 40 190)",
+      "dark": "lch(65% 35 190)",
+      "hover": "lch(68% 38 190)",
+      "focus": "lch(78% 45 190)"
+    },
+    "dark": {
+      "light": "lch(30% 1 0)",
+      "base": "lch(19% 2 0)",
+      "dark": "lch(10% 1 0)",
+      "hover": "lch(25% 1.5 0)",
+      "focus": "lch(35% 2 0)"
+    },
+    "success": {
+      "light": "lch(90% 30 145)",
+      "base": "lch(62% 68 145)",
+      "dark": "lch(50% 55 145)",
+      "hover": "lch(55% 60 145)",
+      "focus": "lch(85% 45 145)"
+    },
+    "info": {
+      "light": "lch(90% 20 210)",
+      "base": "lch(65% 45 210)",
+      "dark": "lch(50% 35 210)",
+      "hover": "lch(58% 40 210)",
+      "focus": "lch(85% 30 210)"
+    },
+    "error": {
+      "light": "lch(90% 30 20)",
+      "base": "lch(53% 75 20)",
+      "dark": "lch(40% 60 20)",
+      "hover": "lch(48% 70 20)",
+      "focus": "lch(80% 50 20)"
+    },
+    "white": "lch(100 0 0)",
+    "black": "lch(0 0 0)",
+    "gray": {
+      "50": "lch(97 0 0)",
+      "100": "lch(95 0 0)",
+      "200": "lch(92 0 0)",
+      "300": "lch(88 0 0)",
+      "400": "lch(82 0 0)",
+      "500": "lch(74 0 0)",
+      "600": "lch(58 0 0)",
+      "700": "lch(33 0 0)",
+      "800": "lch(25 0 0)",
+      "900": "lch(15 0 0)"
+    }
+  },
+  "spacing": {
+    "xs": "0.25rem",
+    "sm": "0.5rem",
+    "md": "1rem",
+    "lg": "1.5rem",
+    "xl": "2rem",
+    "xxl": "3rem"
+  },
+  "typography": {
+    "fontFamily": {
+      "sans": "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      "mono": "'Fira Code', 'Courier New', monospace"
+    },
+    "fontSize": {
+      "xs": "0.75rem",
+      "sm": "0.875rem",
+      "base": "1rem",
+      "lg": "1.125rem",
+      "xl": "1.25rem",
+      "2xl": "1.5rem",
+      "3xl": "1.875rem",
+      "4xl": "2.25rem"
+    },
+    "fontWeight": {
+      "thin": 100,
+      "light": 300,
+      "regular": 400,
+      "medium": 500,
+      "semibold": 600,
+      "bold": 700,
+      "extrabold": 800,
+      "black": 900
+    },
+    "lineHeight": {
+      "tight": 1.25,
+      "base": 1.5,
+      "loose": 1.75,
+      "extra-loose": 2.0
+    },
+    "letterSpacing": {
+      "tight": "-0.02em",
+      "normal": "0em",
+      "wide": "0.05em",
+      "extra-wide": "0.1em"
+    }
+  },
+  "borderRadius": {
+    "sm": "0.25rem",
+    "md": "0.5rem",
+    "lg": "0.75rem",
+    "xl": "1rem",
+    "2xl": "1.5rem",
+    "3xl": "2rem",
+    "full": "9999px"
+  },
+  "shadows": {
+    "sm": "0 1px 2px lch(0 0 0 / 0.05)",
+    "md": "0 4px 6px lch(0 0 0 / 0.1)",
+    "lg": "0 10px 15px lch(0 0 0 / 0.1)",
+    "xl": "0 20px 25px lch(0 0 0 / 0.1)",
+    "2xl": "0 25px 50px lch(0 0 0 / 0.1)"
+  },
+  "zIndex": {
+    "dropdown": 10,
+    "sticky": 50,
+    "modal": 100,
+    "tooltip": 1000
+  },
+  "timing": {
+    "duration": {
+      "fast": "100ms",
+      "base": "200ms",
+      "slow": "300ms",
+      "extra-slow": "400ms"
+    },
+    "easing": {
+      "linear": "linear",
+      "ease-in": "cubic-bezier(0.4, 0, 1, 1)",
+      "ease-out": "cubic-bezier(0, 0, 0.2, 1)",
+      "ease-in-out": "cubic-bezier(0.4, 0, 0.2, 1)"
+    }
+  },
+  "dark": {
+    "color": {
+      "primary": {
+        "light": "lch(50% 120 289)",
+        "base": "lch(45% 115 289)",
+        "dark": "lch(39% 118 289)",
+        "hover": "lch(48% 118 289)",
+        "focus": "lch(60% 125 289)"
+      },
+      "secondary": {
+        "light": "lch(88% 20 250)",
+        "base": "lch(83% 18 250)",
+        "dark": "lch(78% 16 250)",
+        "hover": "lch(85% 19 250)",
+        "focus": "lch(92% 22 250)"
+      },
+      "tertiary": {
+        "light": "lch(75% 25 15)",
+        "base": "lch(70% 22 15)",
+        "dark": "lch(65% 20 15)",
+        "hover": "lch(72% 23 15)",
+        "focus": "lch(80% 28 15)"
+      },
+      "accent": {
+        "light": "lch(78% 45 190)",
+        "base": "lch(72% 40 190)",
+        "dark": "lch(68% 38 190)",
+        "hover": "lch(75% 42 190)",
+        "focus": "lch(82% 50 190)"
+      },
+      "dark": {
+        "light": "lch(35% 2 0)",
+        "base": "lch(19% 2 0)",
+        "dark": "lch(10% 1 0)",
+        "hover": "lch(25% 1.5 0)",
+        "focus": "lch(40% 2.5 0)"
+      },
+      "success": {
+        "light": "lch(80% 45 145)",
+        "base": "lch(75% 60 145)",
+        "dark": "lch(65% 50 145)",
+        "hover": "lch(72% 55 145)",
+        "focus": "lch(55% 58 145)"
+      },
+      "info": {
+        "light": "lch(78% 35 210)",
+        "base": "lch(72% 42 210)",
+        "dark": "lch(62% 35 210)",
+        "hover": "lch(68% 40 210)",
+        "focus": "lch(55% 38 210)"
+      },
+      "error": {
+        "light": "lch(75% 60 20)",
+        "base": "lch(65% 75 20)",
+        "dark": "lch(55% 65 20)",
+        "hover": "lch(62% 70 20)",
+        "focus": "lch(45% 68 20)"
+      },
+      "white": "lch(100 0 0)",
+      "black": "lch(0 0 0)",
+      "gray": {
+        "50": "lch(15 0 0)",
+        "100": "lch(25 0 0)",
+        "200": "lch(33 0 0)",
+        "300": "lch(58 0 0)",
+        "400": "lch(70 0 0)",
+        "500": "lch(82 0 0)",
+        "600": "lch(88 0 0)",
+        "700": "lch(92 0 0)",
+        "800": "lch(95 0 0)",
+        "900": "lch(97 0 0)"
+      }
+    },
+    "shadows": {
+      "sm": "0 1px 2px lch(100 0 0 / 0.05)",
+      "md": "0 4px 6px lch(100 0 0 / 0.08)",
+      "lg": "0 10px 15px lch(100 0 0 / 0.08)",
+      "xl": "0 20px 25px lch(100 0 0 / 0.08)",
+      "2xl": "0 25px 50px lch(100 0 0 / 0.08)"
+    }
+  }
+}
